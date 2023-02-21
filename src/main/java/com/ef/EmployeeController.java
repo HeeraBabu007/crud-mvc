@@ -28,7 +28,6 @@ public class EmployeeController {
     	 return "redirect:/viewemp";//will redirect to viewemp request mapping    
     }
     
-    /* It provides list of employees in model object */    
     @RequestMapping("/viewemp")    
     public String viewemp(Model m){    
         List<Employee> list=empDao.findAllEmployeesByResultSetExtractor();    
